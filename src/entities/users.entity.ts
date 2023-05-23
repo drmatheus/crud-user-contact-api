@@ -5,7 +5,10 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   BeforeInsert,
+  OneToMany,
+  JoinColumn,
 } from "typeorm";
+import { Customer } from "./customers.entity";
 
 @Entity("users")
 export class User {
@@ -28,4 +31,8 @@ export class User {
   hashPassword(): void {
     this.password = hashSync(this.password, 10);
   }
+
+  @OneToMany(() => Customer, (customer) => customer.user)
+  @JoinColumn()
+  customers: Customer[];
 }
