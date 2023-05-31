@@ -11,9 +11,6 @@ export const verifyOwnerContact = (
   const customerId: string = res.locals.customer.id;
   const customerIdInContact: string = res.locals.contact.customer.id;
 
-  console.log(userIdIncustomerId !== userId);
-  console.log(customerId !== customerIdInContact);
-
   if (userIdIncustomerId !== userId || customerId !== customerIdInContact) {
     throw new AppError("Action not allowed", 403);
   }
