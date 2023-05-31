@@ -15,6 +15,9 @@ export const listCustomerService = async (
         contacts: true,
       },
       where: { user: { id: userId } },
+      order: {
+        name: "ASC",
+      },
     })
   );
 };

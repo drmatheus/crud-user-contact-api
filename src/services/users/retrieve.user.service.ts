@@ -13,7 +13,5 @@ export const retrieveUserService = async (
     where: { id: userId },
   });
 
-  console.log(user);
-
   return returnUserSchema.parse(user);
 };

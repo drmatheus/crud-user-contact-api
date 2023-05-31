@@ -13,7 +13,6 @@ export const createUserController = async (
 
   const newUser: TReturnUser = await createUserService(userData);
 
-  console.log(newUser);
   return res.status(201).json(newUser);
 };
 
