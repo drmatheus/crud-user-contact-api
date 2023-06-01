@@ -30,7 +30,7 @@ export class Contact {
   @UpdateDateColumn({ type: "date" })
   updatedAt: string;
 
-  @ManyToOne(() => Customer)
+  @ManyToOne(() => Customer, { onDelete: "CASCADE" })
   @JoinColumn()
   customer: Customer;
 }

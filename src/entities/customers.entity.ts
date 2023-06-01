@@ -21,7 +21,7 @@ export class Customer {
   @CreateDateColumn({ type: "date" })
   createdAt: string;
 
-  @ManyToOne(() => User)
+  @ManyToOne(() => User, { onDelete: "CASCADE" })
   @JoinColumn()
   user: User;
 

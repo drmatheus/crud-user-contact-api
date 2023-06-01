@@ -1,12 +1,5 @@
 import { z } from "zod";
 
-// export const contactInUser = z.object({
-//   type: z.string(),
-//   contact: z.string(),
-//   createdAt: z.string(),
-//   updatedAt: z.string(),
-// });
-
 export const newUserSchema = z.object({
   name: z.string().max(20),
   email: z.string().email().max(35),
@@ -26,5 +19,4 @@ export const returnUserSchema = newUserSchema
   .extend({
     id: z.string(),
     createdAt: z.string(),
-    // contacts: z.array(contactInUser).optional(),
   });
