@@ -39,7 +39,7 @@ Follow the steps below to set up the development environment:
 5. Run the database migrations to set up the database schema:
 
    ```
-   yarn typeorm typeorm migration:run -- -d ./src/data-source
+   yarn typeorm migration:run -- -d ./src/data-source
    ```
 
 ## Running the Application
