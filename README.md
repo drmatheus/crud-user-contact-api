@@ -1,4 +1,4 @@
-# Node.js Starter with Express and TypeORM
+# USER CONTACT API
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
