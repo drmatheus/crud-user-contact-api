@@ -5,7 +5,7 @@
 The Customer Management API is a RESTful web service that allows users to register, create customers, and manage contacts associated with each customer. It provides endpoints to perform CRUD (Create, Read, Update, Delete) operations on customers and their contacts, including phone numbers and email addresses.
 
 ## Documentation
-<a href="https://drmatheus.github.io/user-contact-API-documentation/"> ### Documentation </a>
+### <a href="https://drmatheus.github.io/user-contact-API-documentation/">Documentation</a>
 
 ## Prerequisites
 
